@@ -1,0 +1,101 @@
+<head>
+    <title>Pakistan Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="container">
+    <header class="header">
+        <h1 id="title" class="text-center">Pakistan Survey Form</h1>
+        <p id="description" class="text-center">Thank You for your Feedback about your Experience in Islamic Republic of Pakistan.</p>
+    </header>
+    <form id="survey-form">
+        <!-- One div represents one interactive entity -->
+
+        <!-- form-group for name -->
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter Your Name" required/>
+        </div>
+        <!-- form group for email -->
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+        </div>
+        <!-- form group for Age -->
+        <div class="form-group">
+            <label id="number-label" for="age">Age(optional)</label>
+            <input type="number" name="age" id="number" min="10" max="120" class="form-control" placeholder="Age"/>
+        </div>
+        <!-- form group for Region Selection dropdown -->
+        <div class="form-group">
+            <p>Which Region Tour you liked the most?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected>Select Region</option>
+                <option value="punjab">Punjab</option>
+                <option value="kashmir">Kashmir</option>
+                <option value="sindh">Sindh</option>
+                <option value="kpk">Khyber Pakhtoonkhua</option>
+                <option value="balochistan">Balochistan</option>
+            </select>
+        </div>
+        <!-- form group for Radio Buttons -->
+        <div class="form-group">
+            <p>Would you recommend Pakistan for Tourism to a friend?</p>
+            <label>
+                <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked/> Definitely
+            </label>
+            <label>
+                <input name="user-recommend" value="maybe" type="radio" class="input-radio"/> Maybe
+            </label>
+            <label>
+                <input name="user-recommend" value="not-sure" type="radio" class="input-radio"/> Not Sure
+            </label>
+        </div>
+        <!-- form group for dropdown Selection -->
+        <div class="form-group">
+            <p>What could be your other plans in Pakistan rather than tourism?</p>
+            <select id="plan-pak" name="plan-value" class="form-control" required>
+                <option disabled selected>Pakistan Plan</option>
+                <option value="study">Study Plan</option>
+                <option value="business">Business Plan</option>
+                <option value="job">Job Plan</option>
+            </select>
+        </div>
+        <!-- form group for checkboxes -->
+        <div class="form-group">
+            <p>What things would you like to be improved in Pakistan?</p>
+            <label>
+                <input name="prefer" value="cleaning" type="checkbox" class="input-checkbox"/> Cleaning Service
+            </label>
+            <label>
+                <input name="prefer" value="food" type="checkbox" class="input-checkbox" /> Food Service
+            </label>
+            <label>
+                <input name="prefer" value="tech" type="checkbox" class="input-checkbox" /> Tech. Service
+            </label>
+            <label>
+                <input name="prefer" value="hotel" type="checkbox" class="input-checkbox" /> Hotel Service
+            </label>
+            <label>
+                <input name="prefer" value="transport" type="checkbox" class="input-checkbox" /> Transport Service
+            </label>
+            <label>
+                <input name="prefer" value="education" type="checkbox" class="input-checkbox" /> Education Service
+            </label>
+            <label>
+                <input name="prefer" value="religion" type="checkbox" class="input-checkbox" /> Religious Places Service
+            </label>
+            <label>
+                <input name="prefer" value="security" type="checkbox" class="input-checkbox" /> Security Service
+            </label>
+        </div>
+        <!-- div group for text area -->
+        <div class="form-group">
+            <p>Any Further Feedback you like to give</p>
+            <textarea id="feedbak" class="input-textarea" name="feedbak" placeholder="Enter your personal feedback about your experience in Pakistan">
+            </textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+    </form>
+</div>
