@@ -1,0 +1,262 @@
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #eee;
+    font-family: "Lato", sans-serif;
+}
+
+#page-wrapper{
+    position: relative;
+}
+
+li{
+    /* no style to unordered lists */
+    list-style: none;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.btn{
+    background-color: yellow;
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 3px solid black;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.grid{
+    display: flex;
+}
+
+header{
+    background-color: #eee;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 75px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 600px){
+    header{
+        flex-wrap: wrap;
+    }
+}
+
+/* Design for the whole navigation */
+nav{
+    font-weight: 400;
+}
+
+@media (max-width: 650px){
+    nav{
+        margin-top: 10px;
+        width: 100%;
+        max-width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav li{
+        padding-bottom: 5px;
+    }
+}
+
+/* Design for the list elements in navigation */
+nav > ul{
+    width: 55vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media (max-width: 800px){
+    nav > ul{
+        width: 55vw;
+    }
+}
+@media (max-width: 650px){
+    nav > ul{
+        flex-direction: column;
+    }
+}
+
+#subscribe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 100px;
+}
+
+
+#form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+#subscribe input[type="email"]{
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto 20 auto;
+    padding: 5px;
+}
+
+#subscribe input[type="submit"]{
+    max-width: 150px;
+    width: 100%;
+    margin: auto auto;
+    border: 0;
+}
+
+#subscribe input[type="submit"]:hover{
+    background-color: orange;
+    transition: background-color 1s;
+}
+
+@media (max-width: 490px){
+    #subscribe{
+        margin: 120px auto 0 auto;
+    }
+
+    #subscribe h2{
+        width: 100%;
+        font-size: 20px;
+    }
+}
+
+/* Design configurations for products section */
+#products{
+    margin-top: 30px;
+}
+
+#products .icon{
+    margin: 20px 20px;
+}
+
+#products .desc{
+    margin: 20px 20px;
+}
+
+@media (max-width: 560px){
+    #products .icon{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        height: 60px;
+    }
+}
+
+#tips{
+    display: flex;
+    justify-content: center;
+    margin: 30px auto 20 auto;
+}
+
+#special-packages{
+    display: flex;
+    justify-content: space-between;
+}
+
+.package{
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.package > .level{
+    background-color: #ddd;
+    color: black;
+    padding: 15px 30px;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.package > h2{
+    margin-top: 15px;
+}
+
+.package > ol{
+    margin: 15px auto;
+}
+
+.package > ol > li{
+    padding: 5px 10px;
+}
+
+.package > button{
+    border: 0;
+    margin: 15px 0;
+    font-weight: 400;
+}
+
+.package > button:hover{
+    background-color: orange;
+    transition: background-color 1s;
+}
+
+@media (max-width: 800px){
+    #special-packages{
+        flex-direction: column;
+    }
+
+    .package{
+        width: 100%;
+        max-width: 500px;
+        margin: auto auto 10px auto;
+    }
+}
+
+footer{
+    background-color: #ddd;
+    padding: 20px;
+}
+
+footer > ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer > ul > li{
+    padding: 0 10px;
+}
+
+footer > span{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+}
