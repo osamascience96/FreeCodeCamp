@@ -126,7 +126,7 @@ nav > ul{
 #subscribe input[type="email"]{
     max-width: 300px;
     width: 100%;
-    margin: 0 auto 20 auto;
+    margin: 0 auto 20px auto;
     padding: 5px;
 }
 
