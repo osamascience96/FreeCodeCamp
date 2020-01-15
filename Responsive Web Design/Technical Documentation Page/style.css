@@ -110,3 +110,7 @@ section li{
         margin: 30px auto;
     }
 }
+
+.specs-bold{
+    font-weight: bold;
+}
