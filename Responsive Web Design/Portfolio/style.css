@@ -1,0 +1,253 @@
+:root{
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after{
+    /* Inheriting the box-sizing property from html element */
+    box-sizing: inherit;
+}
+
+html{
+    /* set the box-sizing property to border-box in html element */
+    box-sizing: border-box;
+    font-size: 62%;
+    scroll-behavior: smooth;
+}
+
+/* By Default the font size is 16 */
+
+/* For Desktop and Laptop */
+@media (max-width: 75em){
+    html{
+        font-size: 60%;
+    }
+}
+
+/* For Tablets */
+@media (max-width: 61.25em){
+    html{
+        font-size: 58%;
+    }
+}
+
+/* For Mobiles */
+@media (max-width: 28.75em){
+    html{
+        font-size: 55%;
+    }
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--main-white);
+}
+
+h1, h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+h1{
+    font-size: 6rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--main-white);
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+.nav{
+    background-color: var(--main-red);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 5;
+}
+
+.nav-list{
+    display: flex;
+    margin-right: 2rem;
+}
+
+@media (max-width: 28.75em){
+    .nav{
+        justify-content: center;
+    }
+
+    .nav-list{
+        margin: 0 auto;
+    }
+
+    .nav-list a{
+        margin: 0 50px;
+    }
+}
+
+.nav-list a{
+    display: block;
+    font-size: 2.2rem;
+    padding: 2rem;
+}
+
+.nav-list a:hover{
+    background-color: var(--main-blue);
+}
+
+.welcome-section{
+    background-color: var(--main-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.welcome-section > h2{
+    font-weight: 400;
+    color: var(--main-red);
+}
+
+.projects-section{
+    text-align: center;
+    padding: 10rem 2rem;
+    background-color: var(--main-blue);
+}
+
+.projects-section-header{
+    max-width: 640px;
+    font-size: 4rem;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid var(--main-white);
+}
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) ;
+    grid-gap: 4rem;
+    width: 100%;
+}
+
+.project{
+    background-color: var(--main-gray);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+}
+
+.project-title{
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+}
+
+.code{
+    color: var(--main-gray);
+}
+
+.project:hover .code{
+    color: #ff7f50;
+    transition: color 0.3s ease-out;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+}
+
+.btn-show-all{
+    background-color: var(--main-gray);
+    display: flex;
+    margin: 40px auto;
+    max-width: 200px;
+}
+
+.btn-show-all > img{
+    margin: 0 auto;
+}
+
+.btn-show-all:hover{
+    background-color: var(--main-red);
+    transition: background-color 0.3s ease-in;
+}
+
+.btn-show-all:hover > img{
+    transform: translateX(5px);
+    transition: transform 0.3s ease-out;
+}
+
+.contact-section{
+    background-color: var(--main-gray);
+    text-align: center;
+    padding: 2rem 2rem;
+}
+
+.contact-links{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.contact-details{
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.contact-details > img{
+    margin-right: 10px;
+}
+
+.contact-details:hover{
+    transform: translateY(5px);
+    transition: transform 0.3s ease-out;
+}
+
+@media (max-width: 28.75em){
+    .projects-section-header{
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 30.625em){
+    .projects-section{
+        padding: 6rem 1rem;
+    }
+
+    .projects-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 28.75em){
+    .contact-section-header > h2{
+        font-size: 2rem;
+    }
+}
