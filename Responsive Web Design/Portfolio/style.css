@@ -100,10 +100,6 @@ img{
     .nav{
         justify-content: center;
     }
-
-    .nav-list{
-        margin: 0 auto;
-    }
 }
 
 .nav-list a{
