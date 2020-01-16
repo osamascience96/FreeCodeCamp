@@ -41,7 +41,7 @@ html{
 /* For Mobiles */
 @media (max-width: 28.75em){
     html{
-        font-size: 55%;
+        font-size: 50%;
     }
 }
 
